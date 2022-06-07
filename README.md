@@ -12,8 +12,9 @@ Perimetro de un cuadrado
         lado * 4
 
 Area del cuadrado
+
 -Es el area completa de la figura
--Necesitamos aber la medida de un solo lado
+-Necesitamos saber la medida de un solo lado
     Sintaxis:
         lado**2
 
