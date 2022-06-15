@@ -13,6 +13,7 @@
     </header>
     <main>
         <h2>Calcula el area y perimetro de un cuadrado</h2>
+
         <form action="">
             <label for ="SquareC">
                 <span>¿Cuanto mide un lado de tú cuadrado?</span> <br>
@@ -25,33 +26,57 @@
                 </button >
             </label>
         </form>
+
         <h2>Calcula el area y perimetro de un triangulo</h2>
         
         <form action="">
-            <label for ="TriangleT">
+            <label for ="TriangleLA">
                 <span>Valor del lado A</span> <br>
-                <input type="number" name ="Numero" id ="TriangleT"> <br> <br>
+                <input type="number" name ="LadoA" id ="TriangleLA"> <br> <br>
             </label>
-            <label for ="TriangleT">
+            <label for ="TriangleLB">
                 <span>Valor del lado B</span> <br>
-                <input type="number" name ="Numero" id ="TriangleT"> <br> <br>
+                <input type="number" name ="LadoB" id ="TriangleLB"> <br> <br>
             </label>
-            <label for ="TriangleT">
+            <label for ="TriangleLC">
                 <span>Valor del lado C</span> <br>
-                <input type="number" name ="Numero" id ="TriangleT"> <br> <br>
-            </label>
-            <label for ="TriangleT">
-                <span>Valor de la altura</span> <br>
-                <input type="number" name ="Numero" id ="TriangleT"> <br> <br>
+                <input type="number" name ="LadoC" id ="TriangleLC"> <br> <br>
             </label>
 
-            <button type = "button" onclick="CalcularAreaS()">
+            <button type = "button" onclick="CalcularPerimetroT()">
+                Calcular el perimetro
+            </button> <br> <br>
+            
+            <label for ="TriangleB">
+                <span>Valor de la base</span> <br>
+                <input type="number" name ="LadoC" id ="TriangleB"> <br> <br>
+            </label>
+            <label for ="TriangleH">
+                <span>Valor de la altura</span> <br>
+                <input type="number" name ="AlturaH" id ="TriangleH"> <br> <br>
+            </label>
+
+            <button type = "button" onclick="CalcularAreaT()">
                 Calcular el area
             </button > <br> <br>
-            <button type = "button" onclick="CalcularPerimetroS()">
-                Calcular el perimetro
-            </button>
+         
         </form>
+
+        <h2>Calcula el area y perimetro de un circulo</h2>
+
+        <form action="">
+            <label for ="CircleR">
+                <span>Ingresa el radio</span> <br>
+                <input type="number" name ="radio" id ="CircleR"> <br> <br>
+                <button type = "button" onclick="CalcularAreaCir()">
+                    Calcular el area
+                </button > <br> <br>
+                <button type = "button" onclick="CalcularPerimetroCir()">
+                    Calcular el perimetro
+                </button >
+            </label>
+        </form>
+        
     </main>
     <footer></footer>
    <script src="figuras.js"></script> 

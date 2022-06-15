@@ -26,7 +26,7 @@ function areaT(base, altura){
 };
 
 //Este es el codigo para calcular los datos del circulo
-const PI = Math.PI;
+const PI = 3.14;
 
 function perimetroCir(radio){
     let diametro = radio * 2;
@@ -47,3 +47,49 @@ function CalcularPerimetroS(){
     const perimetro = perimetroCua(value);
     alert(perimetro);
 }; //Gracias al onclick, cada vez que hagamos click al boton se activaran las funciones indicadas
+
+function CalcularAreaS(){
+    const inputS = document.getElementById("SquareC");
+    let value = inputS.value;
+
+    const area = areaCua(value);
+    alert(area);
+};
+
+function CalcularAreaT(){
+    const inputB = document.getElementById("TriangleB");
+    let valueB = inputB.value;
+    const inputH = document.getElementById("TriangleH");
+    let valueH = inputH.value;
+
+    const area = areaT(valueB, valueH);
+    alert(area);
+};
+
+function CalcularPerimetroT(){
+    const inputA = document.getElementById("TriangleLA");
+    let valueA = inputA.value;
+    const inputB = document.getElementById("TriangleLB");
+    let valueB = inputB.value;
+    const inputC = document.getElementById("TriangleLC");
+    let valueC = inputC.value;
+
+    const perimetro = perimetroT(valueA, valueB, valueC);
+    alert(perimetro);
+};
+
+function CalcularAreaCir(){
+    const inputR = document.getElementById("CircleR");
+    let valueR = inputR.value;
+
+    const area = areaCir(valueR);
+    alert(area);
+};
+
+function CalcularPerimetroCir(){
+    const inputR = document.getElementById("CircleR");
+    let valueR = inputR.value;
+
+    const perimetro = perimetroCir(valueR);
+    alert(perimetro);
+};
