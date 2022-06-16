@@ -25,6 +25,21 @@ function areaT(base, altura){
     return `El area de tu triangulo es ${(base * altura) / 2}`;
 };
 
+//Este codigo sirve para sacar la altura en un triangulo isosceles
+
+
+function alturaTI(ladoA, ladoB, baseH){
+    if(ladoA === ladoB && ladoA !== baseH){
+        const formula = ladoB**2 - (baseH / 2)**2;
+        let resultado = Math.sqrt(formula);
+        console.log(resultado);
+    }
+    else{
+        alert("Este no es un triangulo isosceles");
+    };
+    };
+    
+
 //Este es el codigo para calcular los datos del circulo
 const PI = 3.14;
 
