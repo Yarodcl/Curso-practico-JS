@@ -7,3 +7,10 @@
 - Segundo paso: implementar las formulas en JS
 - Tercer paso: crear funciones para generalizar codigo
 - Cuarto paso: intregar JS con HTML
+
+## Taller 2: porcentajes y descuentos
+
+- Primer paso: definir formulas
+- Segundo paso: implementar las formulas en JS
+- Tercer paso: crear funciones para generalizar codigo
+- Cuarto paso: intregar JS con HTML
