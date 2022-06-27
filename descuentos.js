@@ -40,5 +40,5 @@ function priceDiscount(){
  
  
  const resultPrc = document.getElementById("resultPrc"); //En esta variable guardamos el parrafo del HTML para usarlo en JS
- resultPrc.innerText = `El precio con descuento es: $${finalPrice}`; //Aqui finalmente ocupamos el atributo innerText para poder escribir HTML desde el JS
+ resultPrc.innerText = `El precio con descuento es: ${finalPrice} [Moneda local]`; //Aqui finalmente ocupamos el atributo innerText para poder escribir HTML desde el JS
 };

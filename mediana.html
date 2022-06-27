@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Promedio</title>
+    <title>Mediana</title>
 </head>
 <body>
     <header>
@@ -13,11 +13,25 @@
     <main>
         <h2>Calcular la mediana</h2>
         <form action="">
-            <label for="">
-                <span>Ingresa la cantidad de datos</span> <br> <br>
-                <input type="number" name="datos" id="Qdata"> 
-            </label>
+            <label for="uData">
+                <span>Ingresa los numeros:</span> <br> <br>
+                <input type="number" name="datos" class="uData"> 
+            </label> <br>  <br>
+            <label for="uData">
+                <input type="number" name="datos" class="uData"> 
+            </label>  <br>  <br>
+            <label for="uData">
+                <input type="number" name="datos" class="uData"> 
+            </label>  <br>  <br>
+            <label for="uData">
+                <input type="number" name="datos" class="uData"> 
+            </label>  <br>  <br>
+
+            <button type ="button" onclick="calcularMediana()">
+                Enviar
+            </button>
         </form>
+        <p id="resultHTML"></p>
     </main>
     <footer></footer>
 

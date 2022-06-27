@@ -1,19 +1,26 @@
-const lista1 = [
-    100,
-    200,
-    300,
-    500
-];
-
 function mediaAritmetica(lista){
-const sumaLista = lista.reduce( //Reduce es un metodo de los Array que nos permite sumarlos, restarlos, dividirlos, etc. Según necesitemos.
-   function (valorAcumulado = 0, nuevoElemento){ //Podemos usar una funcion anonima para hacer funcionar este meotodo, pero necesitamos dos parametros y uno en 0
-       return valorAcumulado + nuevoElemento;
-    }
-);
+let sumaLista = 0;
+
+for(let i = 0; i < lista.length; i++){
+    sumaLista += lista[i];
+};
 
     const promedioLista = sumaLista / lista.length;
     return promedioLista;
 };
 
+
+function CalcularPromedio(){
+    let data = document.getElementsByClassName("Qdata");
+    let saveArray = [];
+    for (let i = 0; i < data.length; i++){
+        saveArray[i] = data[i].value;
+        saveArray[i] = parseInt(saveArray[i]);
+    };
+    
+    const finalResult = mediaAritmetica(saveArray);
+    
+    const resultHTML = document.getElementById("resultHTML");
+    resultHTML.innerText = `El promedio es de ${finalResult}`;
+};
 

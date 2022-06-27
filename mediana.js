@@ -8,49 +8,59 @@ function mediaAritmetica(lista){
         const promedioLista = sumaLista / lista.length;
         return promedioLista;
     };
-    
-
-
-const firstList = [
-    100,
-    200,
-    600,
-    100000,
-    800,
-    480
-];
 
 function comparacionList(a, b){ //Funcion para comparar numeros de un array desordenado
     return a - b;
 };
 
-firstList.sort(comparacionList); //Funcion para crear la lista ordenada 
 
-const halfList = parseInt(firstList.length / 2); //Calcular la mitad de la lista
+function mediana(lista){
 
-function esPar(a){
-    if(a % 2 === 0){ //Funcion para comparar el par del argumento
-        return true;
+
+    lista.sort(comparacionList); //Funcion para crear la lista ordenada 
+
+    const halfList = parseInt(lista.length / 2); //Calcular la mitad de la lista
+    
+    function esPar(a){
+        if(a % 2 === 0){ //Funcion para comparar el par del argumento
+            return true;
+        }
+        else{
+            return false;
+        }
+    };
+    
+    let mediana;
+    
+    if(esPar(lista.length)){ //Calcular mediana en caso de que sea par
+        const firstElement = lista[halfList - 1];
+        const secondElement = lista[halfList];
+    
+        const finalResult = mediaAritmetica([firstElement, secondElement]);
+    
+        mediana = finalResult;
+        return mediana    
     }
     else{
-        return false;
-    }
+        mediana = lista[halfList]; //Calcular mediana en caso de que sea impar
+        return mediana
+    };
+    
 };
 
-let mediana;
+function calcularMediana(){
+    let data = document.getElementsByClassName("uData");
+    let saveArray = [];
+    for (let i = 0; i < data.length; i++){
+        saveArray[i] = data[i].value;
+        saveArray[i] = parseInt(saveArray[i]);
+    };
 
-if(esPar(firstList.length)){ //Calcular mediana en caso de que sea par
-    const firstElement = firstList[halfList - 1];
-    const secondElement = firstList[halfList];
+    const finalCalculation = mediana(saveArray); 
 
-    const finalResult = mediaAritmetica([firstElement, secondElement]);
-
-    mediana = finalResult;
-    console.log(mediana);
-}
-else{
-    mediana = firstList[halfList]; //Calcular mediana en caso de que sea impar
-    console.log(mediana);
+    const resultHTML = document.getElementById("resultHTML");
+    resultHTML.innerText = `La mediana de esta lista es: ${finalCalculation}`;
 };
+
 
 
