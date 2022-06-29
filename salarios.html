@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salarios
+    </title>
+</head>
+<body>
+    <header>
+        <h1>Estadistica</h1>
+    </header>
+    <main>
+        <h2>Analisis Salarial</h2>
+        <form action="Qdata">
+            <label for="">
+                <span>Ingresa los numeros:</span> <br> <br>
+                <input type="number" name="datos" class="Qdata"> 
+            </label> <br>  <br>
+            <label for="Qdata">
+                <input type="number" name="datos" class="Qdata"> 
+            </label>  <br>  <br>
+            <label for="Qdata">
+                <input type="number" name="datos" class="Qdata"> 
+            </label>  <br>  <br>
+            <label for="Qdata">
+                <input type="number" name="datos" class="Qdata"> 
+            </label>  <br>  <br>
+            <input type="button" value="Calcular" onclick="CalcularPromedio()">
+            <p id="resultHTML"></p>
+        </form>
+    </main>
+    <footer></footer>
+
+    <script src="salarios.js"></script>
+    <script src="analisis.js"></script>
+<!-- Creamos dos Script ya que en uno hacemos nuestro Array con objetos para obtener los salarios
+y en el otro, usamos la formula para generar el analisis -->
+</body>
+</html>
